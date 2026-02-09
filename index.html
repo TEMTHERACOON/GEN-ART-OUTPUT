@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Giving voice to 21st century Artists</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+            html{
+                margin: 0;
+            }
+
+            div{
+                border: red solid 0px;
+            }
+            body{
+                background: #e1ddda;
+            }
+            
+            .opening-container{
+                color: #e1ddda;
+                position: relative;
+                  border-bottom: 10px solid #ebce81;
+                padding: 50px 50px 80px 50px;
+                font-family: Arial, Helvetica, sans-serif;
+                display: grid;  
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows:  repeat(3, 400px);;
+                gap: 20px;
+            }
+
+            .item{
+                position: relative;
+                justify-content: center;
+                align-content: center;
+                border-radius: 20px;
+                overflow: hidden;
+                display: block;
+                transition: ease-in-out 0.5s;
+            }
+
+            .item:hover{
+                scale: 1.1;
+                border: #000000 solid 3px;
+            }
+            .item img{
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .item-2{
+                grid-column: span 2;
+            }
+
+            .item-3{
+                grid-column: span 2;
+            }
+
+            .item-4{
+                grid-row: span 2;
+            }
+
+            .item-5{
+                grid-column: span 2;
+            }
+
+            .item-4 img{
+                border-radius: 20px;
+                width: 250%;
+                height: 100%;
+                translate: -300px;
+            }
+
+            .item-text{
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                height: 50px;
+                font-size: 4.5vw;
+                background: rgba(0, 0, 0, 0.508);
+                color: white;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                opacity: 0;
+            }
+
+             .item:hover .item-text{
+                opacity: 1;
+             }
+
+            .main-title{
+                color:#083b50;
+                font-size: 5vw;
+                padding: 50px;
+                border-bottom: 10px solid #ebce81;
+            }
+
+            .author{
+                margin: 80px auto auto auto;
+                width: 700px;
+                height: 200px;
+                display: flex;
+            }
+            .author-img{
+                width: 200px;
+                clip-path: circle(50%);
+            }
+            .author-img img{
+                width: 100%;
+                height: 120%;
+            }
+            .author-info{
+                color:#083b50;
+                padding: 20px;
+                width: 500px;
+                font-size: 3vw;
+            }
+            .author-info h2{
+                color: #3a1802;
+                line-height: 0.1;
+            }
+            .intro-info{
+                text-indent: 5ch;
+                text-align: justify;
+                font-family: "Poppins", sans-serif;
+                color:#083b50;
+                padding: 90px;
+                font-size: 4vw;
+            }
+
+            .first{
+                background-color: #083b50;
+                padding: 50px;
+                width: 1fr;
+            }
+
+            .first h1{
+                text-align: center;
+                 font-size: 5vw;
+                font-family: Arial, Helvetica, sans-serif;
+                 color: #ebce81;
+            }
+
+            a{
+                color:#083b50;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+            .first p{
+                font-size: 5vw;
+                padding: 20px;
+                text-indent: 5ch;
+                color: #c1d6d9;
+                font-family: "Poppins", sans-serif;
+                font-size: 4vw;
+            }
+
+            
+
+            .scroll{
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto;
+                overflow-y: hidden;
+                height: 800px;
+                gap: 40px;
+                margin-bottom: 500px;
+                margin-top: 50px;
+            }
+
+            .answers{
+                flex: 0 0 auto;
+                font-style: italic;
+                color: #e1ddda;
+                text-align: justify;
+                font-size: 5vw;
+                font-family: "Poppins", sans-serif;
+                background-color: #437f8d;
+                padding: 50px;
+                width: 80vw;
+                height: 100%;
+            }
+
+            @media(min-width:1400px){
+                .item-text{
+                    font-size: 50px;
+                }
+                
+                .first p, .intro-info, .answers p{
+                    font-size: 30px;
+                }
+
+                .first h1{
+                    font-size: 40px;
+                }
+
+                .answers{
+                width: 30vw;
+                height: 70%;
+            }
+
+            }
+        </style>
+    </head>
+    <body>
+
+            <h1 class="main-title">A Light for 21st-Century Artists:  An Advocacy for Young, Growing Artists.</h1>
+
+       
+        <div class="opening-container">
+            <div class="item item-1"><img src="1.jpg"><div class="item-text">@Unijaz</div></div>
+            <div class="item item-2"><img src="2.jpg"><div class="item-text">@Unijaz</div></div>
+            <div class="item item-3"><img src="3.jpg"><div class="item-text">@Alanis Serdeña</div></div>
+            <div class="item item-4"><img src="4.jpg"><div class="item-text">@Unijaz</div></div>
+            <div class="item item-5"><img src="5.jpg"><div class="item-text">@Unijaz</div></div>
+   
+        </div>
+
+     
+        <div class="author">
+            <div class="author-img"><img src="author.jpg"></div>
+            <div class="author-info"><h2>AUTHOR</h2>
+            Kirsten, Campoy (2026) <br>
+            kirstencampoy@gmail.com</div>
+        </div>
+
+        <p class="intro-info">The following information comes from real 
+            answers from <i><b>high school students in the Philippines.</b></i> These chosen individuals <u>practice either traditional or digital illustrations.</u> They shared their perspectives on the problem of Generative AI art through open-ended written questionnaires. This is an output for a research project called <a href="paper.docx" download class="download-btn"><i><b>"Perspectives of 21st Century Artists in the High School Department on the Problems of Art by Generative Artificial Intelligence.”</a></b></i></p>
+
+        <section class="first">
+            <h1>FOR YOUNG ARTISTS THE PROBLEM OF AUTHORSHIP IN GENERATIVE AI ART IS:</h1>
+            <p>-How it steals and copy from works made by other artist. In result, many artists perceive that neither the system or prompter should be the author of an AI generated art piece.</p>
+        </section>
+
+        
+        <div class="scroll">
+        
+         <div class="answers">
+            <p>"...No one really owns the artwork as whole as it is based on/trained on the intellectual property of other artist. There is no originality... It is simply recreation..."  -(participant 2) </p>
+         </div>
+
+          <div class="answers">
+            <p>"No one, not the prompter and not even the machine. It takes from others works, tarnishes them... It is disrecpectul to not ask permission at all.  It relies on human guidance... Do you really think if would still improve if humanity's work wasn't around?" -(participant 3) </p>
+         </div>
+
+         <div class="answers">
+            <p>"It can be plagiarism when AI copies styles or parts of toher artist works without credit" -(participant 4) </p>
+         </div>
+
+         <div class="answers">
+            <p>"The artwork belongs to no one, AI is not a person. AI utilized to generate "art," have been using the art of actual artist without their consent and while that alone does not count as plagiarism, what does is how people claim gen art as theirs" -(participant 5) </p>
+         </div>
+
+         <div class="answers">
+            <p>"Nobody since AI uses other arts to make a frakenstein-ish painting... A blend of palgiarism from many people..." -(participant 6)</p>
+         </div>
+
+         <div class="answers">
+            <p>"...It mixes up random art to make that... AI just do copy and paste and they will say that its their own work." -(participant 7)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Generally... the author would be who wrote the prompt.. Personally, no one should be considered the author... AI is made up of ideas or artstyles that are takem from real artist.. Deprive real artist of recognition" -(participant 8)</p>
+         </div>
+
+         <div class="answers">
+            <p>"AI cannot generate art, it gets it from different artist. ...It copies different artist's artsyles" -(participant 9) </p>
+         </div>
+
+         <div class="answers">
+            <p>"As an artist, I understand that generative AI is trained based on artwork in the public domain; specifically social media and other such platforms. Often, it is done without the artist's consent and copies the artwork to generate images." -(participant 10) </p>
+         </div>
+
+        </div>
+
+        <section class="first">
+            <h1>FOR YOUNG ARTISTS THE PROBLEM OF INTENT AND MEANING OF GENERATIVE AI ART IS:</h1>
+            <p>-That working with generative AI yielded no learning benefits, as it lacks creativity.</p>
+            <p>-However, others viewed it as a possible learning tool, used for finding inspiration instead. Creating a divide.</p>
+        </section>
+
+        <div class="scroll">
+
+        <div class="answers">
+            <p>"I don't think there us garm in using AI generated art for inspiration... but artist should avoid using these as their own creation or property." -(participant 2) </p>
+         </div>
+
+         <div class="answers">
+            <p>"...It can't exactly teach you anything at all cause it takes/steals itger artust work. Gen AI does not know lightingm texture, ambianve and emotions work... It's an insult, disgust and scares me. It has no other purpose other than to replace artist..."  -(participant 3) </p>
+         </div>
+
+          <div class="answers">
+            <p>"Artist may use AI to get new ideas, but some avoid it to keep theirnwork original and personal. Gen AI.. can inspire creativity but should be used responsibly." -(participant 4) </p>
+         </div>
+
+         <div class="answers">
+            <p>"...If an artist is aiming to use it as a learning material or finished output. AI is not accurate or is it credible. AI art is fraudulent piece of media, made up of scaps of actual artwork..." -(participant 5) </p>
+         </div>
+
+         <div class="answers">
+            <p>"It is best for learners to understand to elevate their art and used as a tool not a shortcut. ...A wat to develop your artwork and learn." -(participant 6)</p>
+         </div>
+
+         <div class="answers">
+            <p>"...It strips them of creativity... Deprives thos who wan to make artwork themselves." -(participant 8)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Becayse Gen AI "artworks" are not artworks, and will never be one/ It is disgusting... AI simply copies it" -(participant 9) </p>
+         </div>
+
+         <div class="answers">
+            <p>"As an artist, I see no point in using generative AI in creating artwork. For me, there is a level of complexity that technology simply can't replicate, so I see no point in using or working with it. It means the death of creativity" -(participant 10) </p>
+         </div>
+
+        </div>
+
+        <section class="first">
+            <h1>FOR YOUNG ARTISTS THE PROBLEM OF UNIQUENESS AND AUTHENTICITY OF GENERATIVE AI ART IS:</h1>
+            <p>-That it lacks human authentic skills like emotions and experiences.</p>
+            <p>-That it tends to just copy rather than create, devalueing its uniqueness.</p></p>
+        </section>
+
+        
+        <div class="scroll">
+        
+         <div class="answers">
+            <p>"I disagree that art can in any way be truly created without the existence of real consciousness. Computer algorithms and the brain are not the same. It can eventually create unoriginal works that overshadow unique works."  -(participant 2) </p>
+         </div>
+
+          <div class="answers">
+            <p>"The meaning of art is: the expression or application of human creative skills and imagination..." -(participant 3) </p>
+         </div>
+
+         <div class="answers">
+            <p>"AI cannot create art alone because real art comes from human emotions and experiences. When many copies exist, it is no longer rare or special" -(participant 4) </p>
+         </div>
+
+         <div class="answers">
+            <p>"Art is defined as the application of human creative skill and imagination, thefore no. When someone mass-produce a particular artwork, it undermines the importantance of the original piece." -(participant 5) </p>
+         </div>
+
+         <div class="answers">
+            <p>"On a technical side not yet, as it mostly takes from other artwork. Rarity, creativity and effort can be easily taken away then used to garner support and recognition which ruins percpetion of all artworks." -(participant 6)</p>
+         </div>
+
+         <div class="answers">
+            <p>"No.. its just a copy and paste of the art. Mass production erodes arts unique value." -(participant 7)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Personally, art is a way for artist to  express them selves, and how they view the world... How would a robot have the ability to make an artwork with such a meaning. It also becomes monotone... affecting the artist." -(participant 8)</p>
+         </div>
+
+         <div class="answers">
+            <p>"AI cannot generate art, it gets it from different artist. ...It copies different artist's artsyles" -(participant 9) </p>
+         </div>
+
+         <div class="answers">
+            <p>"There is a level of complexity, emotion, and skill that goes into making an artwork that AI cannot copy. Something that adds value is the inclusion of human imperfection. This is lost in mass production. " -(participant 10) </p>
+         </div>
+
+        </div>
+
+
+         <section class="first">
+            <h1>FOR YOUNG ARTISTS THE PROBLEM OF LOCALITY, CODE OR MALLEABILITY OF GENERATIVE AI ART IS:</h1>
+            <p>-That due to the lack of human expression, they couldn't consider it as true art at all. So they concluded that it is impossible that art can reside in generative pieces.</p>
+        </section>
+
+        <div class="scroll">
+        
+         <div class="answers">
+            <p>"Gen art can imitate and alot of times replace. But it will never be trye art. It should be marginalized into its own category of "art."  -(participant 2) </p>
+         </div>
+
+          <div class="answers">
+            <p>"Nope, Like I said the use of AI in art might as well have its own word. It is no human nor living being unlike as it's meaning of art, human-made." -(participant 3) </p>
+         </div>
+
+         <div class="answers">
+            <p>"No, because again, art is defined as the expression of the human skill and creativity." -(participant 5) </p>
+         </div>
+
+         <div class="answers">
+            <p>"I see it as a learning tool not a form of art" -(participant 6)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Generative art cannot gully be considered true art" -(participant 7)</p>
+         </div>
+
+         <div class="answers">
+            <p>"It can't be. Why? Becaise it has no human emotion, uniqueness and sense of originality." -(participant 8)</p>
+         </div>
+
+         <div class="answers">
+            <p>"No, it can't be, AI cannot generate original art." -(participant 9) </p>
+         </div>
+
+         <div class="answers">
+            <p>"In my opinion it is not considered art based on my personal definition. However, I am not quite sure where it would reside in." -(participant 10) </p>
+         </div>
+
+        </div>
+
+
+
+         <section class="first">
+            <h1>FOR YOUNG ARTISTS THE PROBLEM OF CREATIVITY OF GENERATIVE AI ART IS:</h1>
+            <p>-That generative systems are unoriginal. Only copying artwork created by human hands. Arguing that creativity can only reside in humans.</p>
+        </section>
+
+          <div class="scroll">
+        <div class="answers">
+            <p>"For me, it is an inherently biological and conscious trait which cannot be possessed by trained gen systems"  -(participant 2) </p>
+         </div>
+
+          <div class="answers">
+            <p>"Nah, no original thought in there. I remember asking for it to makea story and it's the most generic plot. Only relies to general stuff." -(participant 3) </p>
+         </div>
+
+
+         <div class="answers">
+            <p>"No, creativity is a unqiue human skill/talent, built from individual experience... AI is incapable of recreating the application of creativity, because it lacks humanity." -(participant 5) </p>
+         </div>
+
+         <div class="answers">
+            <p>"Not yet it needs a prompt not an independent thinking complex." -(participant 6)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Generative systems mimic creativity but lack true intention" -(participant 7)</p>
+         </div>
+
+         <div class="answers">
+            <p>"No because what they generate is already talem from original sources(artist)" -(participant 8)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Gen systems would never be creative, because creativity comes from our minds, our brain." -(participant 9) </p>
+         </div>
+
+         <div class="answers">
+            <p>"No, creativity is something that is human" -(participant 10) </p>
+         </div>
+
+        </div>
+
+        <section class="first">
+            <h1>THEIR PERCEPTIONS OF GENERATIVE AI ART'S DYNAMICITY AND POSTMODERNITY IS THAT:</h1>
+            <p>Many agree that its emergence is unavoidable due to how accepting people are now of new technologies.</p>
+            <p>But they do not believe that it can present are more dynamically, as it again lacks that natural human capabilities to present the feeling of art.</p>
+        </section>
+
+          <div class="scroll">
+        <div class="answers">
+            <p>"More and more companies and individuals perceive gen art as cost-effective alternative..."  -(participant 2) </p>
+         </div>
+
+          <div class="answers">
+            <p>"It's a trend and an ongoing one... They will continue to be ignorant of the cons to maintain a more positive perspective." -(participant 3) </p>
+         </div>
+
+         <div class="answers">
+            <p>"Gen art is unavoidable because postmodernty accepts technology abd bew creatuve methods" -(participant 4) </p>
+         </div>
+
+         <div class="answers">
+            <p>"It is inevitable. There is a natural stubborness... refusing to stop meddling what is harmful. AI is incapable of even experiencing art at akkm vecause it is incapable of understanding art." -(participant 5) </p>
+         </div>
+
+         <div class="answers">
+            <p>"Companies push it as an innovation without restrictions when it needs it. Its plagiarism." -(participant 6)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Postmodernity openness makes gen art inevitable." -(participant 7)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Its not avoidablee.. But it is because people have become dependent on AI." -(participant 8)</p>
+         </div>
+
+         <div class="answers">
+            <p>"Rapid global modernization leads to the development of AI to aid humanity, alongside that comes improvements to generative AI.  It makes art more accessible to more people but I do not personally think it is more dynamic that other non-AI methods." -(participant 10) </p>
+         </div>
+
+        </div>
+     </body>
+   
+</html>
